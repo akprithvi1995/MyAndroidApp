@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="5dp">
+    <LinearLayout
+
+        android:id="@+id/lladdress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="10dp"
+        android:visibility="gone">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Address"
+            android:layout_weight="0.7"
+            android:textStyle="bold"/>
+        <TextView
+            android:id="@+id/tvaddress"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.3"/>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/llnumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="10dp"
+        android:visibility="gone">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Phone Number"
+            android:layout_weight="0.7"
+            android:textStyle="bold"/>
+        <TextView
+            android:autoLink="phone"
+            android:id="@+id/tvnumber"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.3"/>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/llpricelevel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="10dp"
+        android:visibility="gone">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Price Level"
+            android:layout_weight="0.7"
+            android:textStyle="bold"/>
+        <TextView
+            android:id="@+id/tvprice"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.3"/>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/llrating"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="10dp"
+        android:weightSum="1"
+        >
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Rating"
+            android:layout_weight="0.4"
+            android:textStyle="bold"/>
+
+        <RatingBar
+
+            style="?android:attr/ratingBarStyleSmall"
+            android:id="@+id/ratingstar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:numStars="5"
+            android:layout_gravity="left"
+
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/llgooglepage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="10dp"
+        android:visibility="gone">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Google Page"
+            android:layout_weight="0.7"
+            android:textStyle="bold"/>
+        <TextView
+            android:autoLink="all"
+            android:id="@+id/tvgooglepage"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.3"/>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/llwebsite"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="10dp"
+        android:visibility="gone">
+        <TextView
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Website"
+            android:layout_weight="0.7"
+            android:textStyle="bold"/>
+        <TextView
+            android:autoLink="all"
+            android:id="@+id/tvwebsite"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.3"/>
+    </LinearLayout>
+
+
+</LinearLayout>
